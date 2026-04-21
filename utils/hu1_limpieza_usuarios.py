@@ -2,7 +2,7 @@ import sys
 sys.stdout.reconfigure(encoding="utf-8")
 import os
 import pandas as pd
-from hu3_simulacion_usuarios import generar_usuarios
+from utils.hu3_simulacion_usuarios import generar_usuarios
 
 # ---------------------------------------------
 #  HU 1 — Limpieza del set de datos

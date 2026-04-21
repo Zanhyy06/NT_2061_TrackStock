@@ -12,7 +12,7 @@ CSV_LIMPIO  = "usuarios_limpios.csv"
 CSV_CRUDO   = "usuarios.csv"
 
 
-def cargar_datos() -> pd.DataFrame:
+def cargar_datos() -> pd.DataFrame: # sirve para cargar el dataset limpio o crudo, dependiendo de cuál esté disponible
     for ruta in (CSV_LIMPIO, CSV_CRUDO):
         if os.path.exists(ruta):
             df = pd.read_csv(ruta, encoding="utf-8")
